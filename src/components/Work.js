@@ -10,7 +10,7 @@ const Work = () => {
         <div>
           <div>
             <p className="text-4xl font-bold inline border-b-4 border-green-500">
-              Work
+              Works
             </p>
             <p>Check out some of my recent work</p>
           </div>
