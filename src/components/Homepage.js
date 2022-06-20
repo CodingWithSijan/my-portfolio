@@ -12,7 +12,7 @@ const Homepage = () => {
       <div name="home" className="w-full h-full bg-[#0a192f]">
         {/* Container */}
         <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full text-white">
-          <div className="w-[300px] p-5 md:h-[20%] flex flex-row mb-8">
+          <div className="p-5 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] flex flex-row mb-8">
             <img
               src={ProfilePicture}
               alt="Profile Picture"
