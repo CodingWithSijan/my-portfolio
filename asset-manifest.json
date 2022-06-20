@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/CodingWithSijan.github.io/my-portfolio/static/css/main.ebc7c95d.css",
+    "main.js": "/CodingWithSijan.github.io/my-portfolio/static/js/main.a86a72e6.js",
+    "static/media/profile_picture.jpg": "/CodingWithSijan.github.io/my-portfolio/static/media/profile_picture.aae7fa1aed325fcdfd2a.jpg",
+    "static/media/bootstrap.png": "/CodingWithSijan.github.io/my-portfolio/static/media/bootstrap.d976f93a9407f354d370.png",
+    "static/media/profile_picture2.jpg": "/CodingWithSijan.github.io/my-portfolio/static/media/profile_picture2.38cebd823e0775becc5c.jpg",
+    "static/media/react.png": "/CodingWithSijan.github.io/my-portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/github.png": "/CodingWithSijan.github.io/my-portfolio/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/html.png": "/CodingWithSijan.github.io/my-portfolio/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/tailwind.png": "/CodingWithSijan.github.io/my-portfolio/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/CodingWithSijan.github.io/my-portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/java.png": "/CodingWithSijan.github.io/my-portfolio/static/media/java.39770df150b98ed9e2ed.png",
+    "static/media/logo.png": "/CodingWithSijan.github.io/my-portfolio/static/media/logo.a36eae6658b07f35ce9d.png",
+    "static/media/javascript.png": "/CodingWithSijan.github.io/my-portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/CodingWithSijan.github.io/my-portfolio/index.html",
+    "main.ebc7c95d.css.map": "/CodingWithSijan.github.io/my-portfolio/static/css/main.ebc7c95d.css.map",
+    "main.a86a72e6.js.map": "/CodingWithSijan.github.io/my-portfolio/static/js/main.a86a72e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebc7c95d.css",
+    "static/js/main.a86a72e6.js"
+  ]
+}
