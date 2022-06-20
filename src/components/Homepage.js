@@ -9,10 +9,10 @@ import { BsFillBriefcaseFill } from "react-icons/bs";
 const Homepage = () => {
   return (
     <>
-      <div name="home" className="w-full h-screen bg-[#0a192f]">
+      <div name="home" className="w-full h-full bg-[#0a192f]">
         {/* Container */}
         <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full text-white">
-          <div className="md:h-[20%] w-full flex flex-row mb-8">
+          <div className="w-[300px] p-5 md:h-[20%] flex flex-row mb-8">
             <img
               src={ProfilePicture}
               alt="Profile Picture"
@@ -52,7 +52,7 @@ const Homepage = () => {
               </Link>
               <HiArrowNarrowRight className="ml-2 group-hover:rotate-90 duration-200" />
             </button>
-            <button className="text-white w-[164px] group border-2 px-6 py-3 my-2 flex items-center font-bold hover:bg-pink-600 hover:border-pink-600">
+            <button className="text-white w-[164px] text-xs md:text-lg group border-2 px-6 py-3 my-2 flex items-center font-bold hover:bg-pink-600 hover:border-pink-600">
               <Link
                 activeClass="active"
                 to="about"
