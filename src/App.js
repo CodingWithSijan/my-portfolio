@@ -3,10 +3,12 @@
 // import AboutPage from "./components/AboutPage";
 // import ContactPage from "./components/ContactPage";
 import AboutPage from "./components/AboutPage";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Homepage from "./components/Homepage";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
-import Work from "./components/Work";
+
 function App() {
   return (
     <>
@@ -14,7 +16,8 @@ function App() {
       <Homepage />
       <AboutPage />
       <Skills />
-      <Work />
+      <Contact />
+      <Footer />
     </>
   );
 }

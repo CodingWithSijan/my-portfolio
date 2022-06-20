@@ -2,6 +2,8 @@ import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import ProfilePicture from "../assests/profile_picture.jpg";
 import ProfilePicture2 from "../assests/profile_picture2.jpg";
+import { Link } from "react-scroll";
+import { BsFillBriefcaseFill } from "react-icons/bs";
 
 // HomePage
 const Homepage = () => {
@@ -21,22 +23,55 @@ const Homepage = () => {
           <h1 className="text-4xl sm:text-7xl  font-bold text-white">
             Sijan Pradhan
           </h1>
-          <h2 className="text-2xl py-3 text-green-500">I am Web Developer</h2>
-          <h2 className="py-4 text-gray-400">
+          <h2 className="text-4xl sm:text-5xl py-3 text-gray-400">
+            I am a <span className="text-gray-200">Web Developer</span>
+          </h2>
+          <h2 className="py-4 text-gray-300">
             I am a Information technology student capable of managing technology
             projects from concept to completion with remarkable deadline
             sensitivity. I have Strong analytical skills combined with
             experience in object oriented programming techniques. I am a
             Compatible team player through complete project cycles, testing, and
             final implementation. I have a Good communication skill, fast and
-            effective learner. Fluent in English. Good knowledge of HTML5, CSS,
-            Javascript, Bootstrap 3/4, TailwindCSS, React, JQuery, Data
-            Modelling, MySQL, PHP. Have a fair knowledge of MVC framework such
-            as codeigniter.
+            effective learner. Fluent in English. Experienced in
+            <span className="text-stone-400 ml-2">
+              HTML5, CSS, Javascript, Bootstrap 3/4, TailwindCSS, React, JQuery,
+              Data Modelling, MySQL, PHP
+            </span>
+            . Have a fair knowledge of MVC framework such as codeigniter.
           </h2>
-          <div>
-            <button className="text-white group border-2 px-6 py-3 my-2 flex items-center font-bold hover:bg-green-600 hover:border-green-600">
-              View Work
+          <div className="flex flex-col sm:flex-row justify-start md:gap-4 items-center">
+            <button className="text-white group w-[164px] border-2 px-6 py-3 my-2 flex items-center font-bold hover:bg-green-600 hover:border-green-600">
+              <Link
+                activeClass="active"
+                to="skills"
+                smooth={true}
+                duration={500}
+              >
+                View Skills
+              </Link>
+              <HiArrowNarrowRight className="ml-2 group-hover:rotate-90 duration-200" />
+            </button>
+            <button className="text-white w-[164px] group border-2 px-6 py-3 my-2 flex items-center font-bold hover:bg-pink-600 hover:border-pink-600">
+              <Link
+                activeClass="active"
+                to="about"
+                smooth={true}
+                duration={500}
+              >
+                About Me
+              </Link>
+              <HiArrowNarrowRight className="ml-2 group-hover:rotate-90 duration-200" />
+            </button>
+            <button className="text-white group w-[164px] border-2 px-6 py-3 my-2 flex items-center font-bold hover:bg-orange-600 hover:border-orange-600">
+              <Link
+                activeClass="active"
+                to="contact"
+                smooth={true}
+                duration={500}
+              >
+                Contact Me
+              </Link>
               <HiArrowNarrowRight className="ml-2 group-hover:rotate-90 duration-200" />
             </button>
           </div>

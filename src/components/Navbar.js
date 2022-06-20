@@ -9,6 +9,7 @@ import {
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assests/logo.png";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -23,18 +24,37 @@ const Navbar = () => {
         </div>
         {/* Menu */}
         <ul className="hidden md:flex">
-          <li className="hover:text-green-300 duration-150">Home</li>
-          <li className="hover:text-green-300 duration-150">About</li>
-          <li className="hover:text-green-300 duration-150">Skills</li>
-          <li className="hover:text-green-300 duration-150">Work</li>
-          <li className="hover:text-green-300 duration-150">Contact</li>
+          <li className="hover:text-green-300 duration-150">
+            <Link activeClass="active" to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li className="hover:text-green-300 duration-150">
+            <Link activeClass="active" to="about" smooth={true} duration={500}>
+              About
+            </Link>
+          </li>
+          <li className="hover:text-green-300 duration-150">
+            <Link activeClass="active" to="skills" smooth={true} duration={500}>
+              Skills
+            </Link>
+          </li>
+
+          <li className="hover:text-green-300 duration-150">
+            <Link
+              activeClass="active"
+              to="contact"
+              smooth={true}
+              duration={500}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
-
         {/* Hamburger */}
-        <div className="md:hidden z-10" onClick={handleClick}>
-          {nav === false ? <FaBars /> : <FaTimes />}
+        <div className="md:hidden z-10 absolute right-4" onClick={handleClick}>
+          {nav === false ? <FaBars size={30} /> : <FaTimes size={30} />}
         </div>
-
         {/* Mobile Menu */}
         <div>
           <ul
@@ -45,19 +65,49 @@ const Navbar = () => {
             }
           >
             <li className="py-6 text-4xl hover:text-green-300 duration-150">
-              Home
+              <Link
+                onClick={handleClick}
+                activeClass="active"
+                to="home"
+                smooth={true}
+                duration={500}
+              >
+                Home
+              </Link>
             </li>
             <li className="py-6 text-4xl hover:text-green-300 duration-150">
-              About
+              <Link
+                onClick={handleClick}
+                activeClass="active"
+                to="about"
+                smooth={true}
+                duration={500}
+              >
+                About
+              </Link>
             </li>
             <li className="py-6 text-4xl hover:text-green-300 duration-150">
-              Skills
+              <Link
+                onClick={handleClick}
+                activeClass="active"
+                to="skills"
+                smooth={true}
+                duration={500}
+              >
+                Skills
+              </Link>
             </li>
+
             <li className="py-6 text-4xl hover:text-green-300 duration-150">
-              Work
-            </li>
-            <li className="py-6 text-4xl hover:text-green-300 duration-150">
-              Contact
+              <Link
+                onClick={handleClick}
+                activeClass="active"
+                to="contact"
+                smooth={true}
+                duration={500}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
@@ -66,8 +116,9 @@ const Navbar = () => {
           <ul>
             <li className="w-[160px] h-[60px] ml-[-100px] duration-300 hover:ml-[-10px] opacity-80">
               <a
-                href="/"
+                href="https://www.linkedin.com/in/sijan-pradhan-b92a54235"
                 className="flex justify-between px-2 h-full items-center w-full bg-blue-600  text-gray-300"
+                target="_blank"
               >
                 LinkedIn <FaLinkedin size={30} />
               </a>
@@ -75,16 +126,18 @@ const Navbar = () => {
 
             <li className="w-[160px] h-[60px] ml-[-100px] duration-300 hover:ml-[-10px] opacity-80">
               <a
-                href="/"
+                href="https://github.com/CodingWithSijan"
                 className="flex justify-between px-2 items-center w-full h-full text-gray-300 bg-[#333333]"
+                target="_blank"
               >
                 Github <FaGithub size={30} />
               </a>
             </li>
             <li className="w-[160px] h-[60px] ml-[-100px] duration-300 hover:ml-[-10px] opacity-80">
               <a
-                href="/"
+                href="https://www.facebook.com/john.prad.948"
                 className="flex justify-between px-2 h-full items-center bg-blue-800 w-full text-gray-300"
+                target="_blank"
               >
                 Facebook <FaFacebook size={30} />
               </a>
@@ -93,6 +146,7 @@ const Navbar = () => {
               <a
                 href="/"
                 className="flex justify-between px-2 h-full items-center w-full bg-[#565f69] text-gray-300"
+                target="_blank"
               >
                 Resume <BsFillPersonLinesFill size={30} />
               </a>
