@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CodingWithSijan.github.io/my-portfolio/static/css/main.ebc7c95d.css",
-    "main.js": "/CodingWithSijan.github.io/my-portfolio/static/js/main.a86a72e6.js",
+    "main.js": "/CodingWithSijan.github.io/my-portfolio/static/js/main.cb07ae94.js",
     "static/media/profile_picture.jpg": "/CodingWithSijan.github.io/my-portfolio/static/media/profile_picture.aae7fa1aed325fcdfd2a.jpg",
     "static/media/bootstrap.png": "/CodingWithSijan.github.io/my-portfolio/static/media/bootstrap.d976f93a9407f354d370.png",
     "static/media/profile_picture2.jpg": "/CodingWithSijan.github.io/my-portfolio/static/media/profile_picture2.38cebd823e0775becc5c.jpg",
@@ -15,10 +15,10 @@
     "static/media/javascript.png": "/CodingWithSijan.github.io/my-portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/CodingWithSijan.github.io/my-portfolio/index.html",
     "main.ebc7c95d.css.map": "/CodingWithSijan.github.io/my-portfolio/static/css/main.ebc7c95d.css.map",
-    "main.a86a72e6.js.map": "/CodingWithSijan.github.io/my-portfolio/static/js/main.a86a72e6.js.map"
+    "main.cb07ae94.js.map": "/CodingWithSijan.github.io/my-portfolio/static/js/main.cb07ae94.js.map"
   },
   "entrypoints": [
     "static/css/main.ebc7c95d.css",
-    "static/js/main.a86a72e6.js"
+    "static/js/main.cb07ae94.js"
   ]
 }
