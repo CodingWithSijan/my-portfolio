@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.dc86c711.css",
+    "main.js": "/my-portfolio/static/js/main.c7741b1e.js",
+    "static/media/gfih.png": "/my-portfolio/static/media/gfih.e13f58f4ac0adbde101e.png",
+    "static/media/suraksha.png": "/my-portfolio/static/media/suraksha.4a5c7882438c83e19de4.png",
+    "static/media/profile_picture.jpg": "/my-portfolio/static/media/profile_picture.aae7fa1aed325fcdfd2a.jpg",
+    "static/media/cloud.png": "/my-portfolio/static/media/cloud.f7e1fe7c7928abcc8809.png",
+    "static/media/resume.png": "/my-portfolio/static/media/resume.a7d52ed6d2d0cd3de0a6.png",
+    "static/media/cryptoTrading.png": "/my-portfolio/static/media/cryptoTrading.919248a3e306da633010.png",
+    "static/media/bootstrap.png": "/my-portfolio/static/media/bootstrap.d976f93a9407f354d370.png",
+    "static/media/react.png": "/my-portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/github.png": "/my-portfolio/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/html.png": "/my-portfolio/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/tailwind.png": "/my-portfolio/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/my-portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/java.png": "/my-portfolio/static/media/java.39770df150b98ed9e2ed.png",
+    "static/media/logo.png": "/my-portfolio/static/media/logo.a36eae6658b07f35ce9d.png",
+    "static/media/pythonIDE.png": "/my-portfolio/static/media/pythonIDE.fdf70b928ac3fd1f5036.png",
+    "static/media/javascript.png": "/my-portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "static/media/seo.jpeg": "/my-portfolio/static/media/seo.1deaf68acb265ce395fe.jpeg",
+    "index.html": "/my-portfolio/index.html",
+    "main.dc86c711.css.map": "/my-portfolio/static/css/main.dc86c711.css.map",
+    "main.c7741b1e.js.map": "/my-portfolio/static/js/main.c7741b1e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc86c711.css",
+    "static/js/main.c7741b1e.js"
+  ]
+}
