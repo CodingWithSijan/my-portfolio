@@ -27,18 +27,15 @@ const Homepage = () => {
             I am a <span className="text-gray-200">Web Developer</span>
           </h2>
           <h2 className="py-4 text-gray-300">
-            I am a Information technology student capable of managing technology
-            projects from concept to completion with remarkable deadline
-            sensitivity. I have Strong analytical skills combined with
-            experience in object oriented programming techniques. I am a
-            Compatible team player through complete project cycles, testing, and
-            final implementation. I have a Good communication skill, fast and
-            effective learner. Fluent in English. Experienced in
-            <span className="text-stone-400 ml-2">
-              HTML5, CSS, Javascript, Bootstrap 3/4, TailwindCSS, React, JQuery,
-              Data Modelling, MySQL, PHP
-            </span>
-            . Have a fair knowledge of MVC framework such as codeigniter.
+           Hi, I'm Sijan Pradhan, a passionate and results-driven Developer Programmer with hands-on experience building modern, scalable web applications. I hold a Bachelor's degree in Information Technology from Central Queensland University and have developed a strong foundation in front-end and back-end development, particularly using the MERN stack (MongoDB, Express.js, React, Node.js).
+
+One of the most defining chapters in my professional journey was my time at Irak Solutions Pty Ltd. At Irak, I was deeply involved in the design, development, and deployment of several internal and client-facing systems. My role focused on building user-centric features, maintaining scalable codebases, and optimizing performance. I collaborated closely with cross-functional teams to deliver high-quality software solutions, contributing significantly to the company's technological growth.
+
+In addition to my technical experience, I bring a strong sense of responsibility, problem-solving skills, and a constant desire to learn and grow. Whether it's improving UI/UX, writing clean backend APIs, or exploring the latest in AI, I'm always excited to take on new challenges and push the boundaries of what technology can do.
+
+Let’s build something impactful together.
+
+
           </h2>
           <div className="flex flex-col sm:flex-row justify-start md:gap-4 items-center">
             <button className="text-white group w-[164px] border-2 px-6 py-3 my-2 flex items-center font-bold hover:bg-green-600 hover:border-green-600">
