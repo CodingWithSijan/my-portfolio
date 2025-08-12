@@ -2,25 +2,60 @@
 // import Homepage from "./components/Homepage";
 // import AboutPage from "./components/AboutPage";
 // import ContactPage from "./components/ContactPage";
-import AboutPage from "./components/AboutPage";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import React, { useState } from "react";
+import AboutPageNew from "./components/AboutPageNew";
+import ContactNew from "./components/ContactNew";
+import FooterNew from "./components/FooterNew";
 import Homepage from "./components/Homepage";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import NavbarNew from "./components/NavbarNew";
+import ProjectsNew from "./components/ProjectsNew";
+import SkillsNew from "./components/SkillsNew";
+import ParticleSystem from "./components/ParticleSystem";
+import InteractiveTerminal from "./components/InteractiveTerminal";
+import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
+	const [isLoading, setIsLoading] = useState(true);
+	const [showTerminalModal, setShowTerminalModal] = useState(false);
+
+	const handleLoadComplete = () => {
+		setIsLoading(false);
+	};
+
+	const handleTerminalClick = () => {
+		setShowTerminalModal(true);
+	};
+
+	const handleTerminalClose = () => {
+		setShowTerminalModal(false);
+	};
+
+	if (isLoading) {
+		return <LoadingScreen onLoadComplete={handleLoadComplete} />;
+	}
+
 	return (
-		<>
-			<Navbar />
-			<Homepage />
-			<AboutPage />
-			<Skills />
-			<Projects />
-			<Contact />
-			<Footer />
-		</>
+		<div className="App professional">
+			{/* Global particle background */}
+			<ParticleSystem />
+
+			{/* Main Content */}
+			<NavbarNew onTerminalClick={handleTerminalClick} />
+			<div className="pt-20">
+				<Homepage />
+				<AboutPageNew />
+				<SkillsNew />
+				<ProjectsNew />
+				<ContactNew />
+				<FooterNew />
+			</div>
+
+			{/* Interactive Terminal Modal */}
+			<InteractiveTerminal
+				isOpen={showTerminalModal}
+				onClose={handleTerminalClose}
+			/>
+		</div>
 	);
 }
 

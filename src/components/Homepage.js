@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import ProfilePicture from "../assests/profile_picture.jpg";
 import { Link } from "react-scroll";
 
@@ -7,9 +8,12 @@ import { Link } from "react-scroll";
 const Homepage = () => {
 	return (
 		<>
-			<div name="home" className="w-full h-full bg-[#0a192f]">
+			<div
+				name="home"
+				className="relative w-full min-h-screen bg-[#0a192f] overflow-hidden"
+			>
 				{/* Container */}
-				<div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full text-white">
+				<div className="relative z-10 max-w-[1000px] mx-auto px-8 flex flex-col justify-start min-h-screen text-white">
 					<div className="p-5 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] flex flex-row mb-8">
 						<img
 							src={ProfilePicture}
