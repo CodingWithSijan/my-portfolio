@@ -425,39 +425,19 @@ body {
 
 /* Sound visualizer effect */
 .sound-visualizer {
-  position: fixed;
-  bottom: 24px;
-  left: 24px;
-  width: 100px;
-  height: 50px;
-  pointer-events: none;
-  z-index: 1000;
-  display: flex;
-  align-items: end;
-  gap: 2px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 100px;
+	height: 50px;
+	pointer-events: none;
+	z-index: 1000;
+	display: flex;
+	align-items: end;
+	gap: 2px;
 }
 
-/* Fixed button positioning */
-.fixed-buttons {
-  position: fixed;
-  z-index: 1000;
-}
-
-/* Ensure buttons are properly spaced */
-.fixed-bottom-right {
-  bottom: 24px;
-  right: 24px;
-}
-
-.fixed-top-right {
-  top: 24px;
-  right: 24px;
-}
-
-/* Button hover effects */
-.btn-hover-glow:hover {
-  box-shadow: 0 0 20px rgba(139, 69, 19, 0.5);
-}.sound-bar {
+.sound-bar {
 	width: 4px;
 	background: var(--theme-primary, #00ff88);
 	border-radius: 2px;
@@ -500,38 +480,4 @@ body {
 	}
 }
 
-/* Modal animations */
-@keyframes fade-in {
-	0% { 
-		opacity: 0; 
-		transform: translate(-50%, -50%) scale(0.8);
-	}
-	100% { 
-		opacity: 1; 
-		transform: translate(-50%, -50%) scale(1);
-	}
-}
-
-.animate-fade-in {
-	animation: fade-in 0.3s ease-out;
-}
-
-/* Improved floating buttons */
-.floating-button {
-	backdrop-filter: blur(10px);
-	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-}
-
-.floating-button:hover {
-	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
-}
-
-@layer base {
-	body {
-		@apply font-[Inter];
-	}
-	li {
-		@apply px-4;
-		@apply cursor-pointer;
-	}
-}
+/* Removed Tailwind @apply rules for compatibility. */

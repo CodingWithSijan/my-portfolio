@@ -6,13 +6,7 @@ import {
 	FaReact,
 	FaPython,
 } from "react-icons/fa";
-import {
-	SiJavascript,
-	SiTailwindcss,
-	SiMongodb,
-	SiExpress,
-	SiNodedotjs,
-} from "react-icons/si";
+import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import Project1Image from "../assests/projects/gfih.png";
 import Project2Image from "../assests/projects/cloud.png";
 import Project3Image from "../assests/projects/suraksha.png";

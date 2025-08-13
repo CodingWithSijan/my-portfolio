@@ -87,7 +87,7 @@ const Navbar = ({ onTerminalClick }) => {
 		<>
 			{/* Main Navbar */}
 			<nav
-				className={`fixed w-full h-20 flex justify-between items-center px-4 z-50 transition-all duration-300 ${
+				className={`fixed w-full py-4 flex justify-between items-center px-4 z-50 transition-all duration-300 ${
 					scrolled
 						? "bg-[#0a192f]/95 backdrop-blur-md shadow-lg border-b border-green-400/20"
 						: "bg-transparent"
@@ -175,28 +175,6 @@ const Navbar = ({ onTerminalClick }) => {
 					</div>
 				</div>
 			)}
-
-			{/* Social Links Sidebar */}
-			<div className="hidden lg:flex fixed flex-col top-[35%] left-0 z-40">
-				<ul>
-					{socialLinks.map(({ id, child, href, style, download }) => (
-						<li
-							key={id}
-							className={`flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 ${style} shadow-lg`}
-						>
-							<a
-								href={href}
-								className="flex justify-between items-center w-full text-white font-semibold"
-								download={download}
-								target={download ? "_self" : "_blank"}
-								rel={download ? undefined : "noreferrer"}
-							>
-								{child}
-							</a>
-						</li>
-					))}
-				</ul>
-			</div>
 
 			{/* Scroll to Top Button */}
 			{scrolled && (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import ProfilePicture from "../assests/profile_picture.jpg";
@@ -7,120 +7,111 @@ import { Link } from "react-scroll";
 // HomePage
 const Homepage = () => {
 	return (
-		<>
-			<div
-				name="home"
-				className="relative w-full min-h-screen bg-[#0a192f] overflow-hidden"
-			>
-				{/* Container */}
-				<div className="relative z-10 max-w-[1000px] mx-auto px-8 flex flex-col justify-start min-h-screen text-white">
-					<div className="p-5 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] flex flex-row mb-8">
-						<img
-							src={ProfilePicture}
-							alt="Profile"
-							className="shadow-lg shadow-slate-800 rounded-full"
-						/>
+		<div
+			name="home"
+			className="relative w-full min-h-screen bg-[#0a192f] overflow-hidden"
+		>
+			{/* Content Container */}
+			<div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10  text-white">
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+					{/* Left: Text */}
+					<div>
+						<p className="text-green-300 text-base sm:text-lg mb-2">
+							Hi, my name is
+						</p>
+						<h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-4">
+							<span className="text-white">Sijan </span>
+							<span className="gradient-text">Pradhan</span>
+						</h1>
+						<h2 className="text-2xl sm:text-3xl text-gray-300 mb-4">
+							Software Developer crafting fast, accessible web apps.
+						</h2>
+						<p className="text-gray-300 leading-relaxed mb-6 max-w-2xl">
+							I build delightful experiences with React and Node.js, turning
+							ideas into clean, scalable products. Focused on performance, UX,
+							and measurable impact.
+						</p>
+
+						{/* Tech badges */}
+						<div className="flex flex-wrap items-center gap-2 mb-8">
+							{[
+								"React",
+								"TypeScript",
+								"Node.js",
+								"Express",
+								"MongoDB",
+								"Tailwind",
+							].map((tech) => (
+								<span
+									key={tech}
+									className="px-3 py-1 rounded-full text-sm bg-[#0f1b33] text-gray-300 border border-white/10"
+								>
+									{tech}
+								</span>
+							))}
+						</div>
+
+						{/* CTAs */}
+						<div className="flex flex-col sm:flex-row items-center gap-4 mb-6">
+							<Link
+								to="projects"
+								smooth={true}
+								duration={500}
+								className="inline-flex items-center gap-2 bg-gradient-to-r from-green-500 to-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:from-green-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
+							>
+								View Projects <HiArrowNarrowRight />
+							</Link>
+							<a
+								href="/sijan_pradhan_Resume.pdf"
+								target="_blank"
+								rel="noreferrer"
+								className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold border border-white/10 text-gray-200 hover:border-green-400/50 hover:text-white transition-all duration-300"
+							>
+								Download Resume
+							</a>
+						</div>
+
+						{/* Social Row */}
+						<div className="flex items-center gap-5 text-gray-400">
+							<a
+								href="https://github.com/CodingWithSijan"
+								target="_blank"
+								rel="noreferrer"
+								className="hover:text-white transition-colors"
+							>
+								<FaGithub size={24} />
+							</a>
+							<a
+								href="https://linkedin.com/in/sijan-pradhan"
+								target="_blank"
+								rel="noreferrer"
+								className="hover:text-blue-400 transition-colors"
+							>
+								<FaLinkedin size={24} />
+							</a>
+							<a
+								href="mailto:sijan.pradhan2020@gmail.com"
+								className="hover:text-green-400 transition-colors"
+							>
+								<FaEnvelope size={24} />
+							</a>
+						</div>
 					</div>
-					<p className="text-green-300 text-2xl sm:text-3xl">Hi, my name is</p>
-					<h1 className="text-4xl sm:text-7xl  font-bold text-white">
-						Sijan Pradhan
-					</h1>
-					<h2 className="text-4xl sm:text-5xl py-3 text-gray-400">
-						I am a <span className="text-green-400">Software Developer</span>
-					</h2>
-					<h2 className="py-4 text-gray-300">
-						<span className="hover:text-green-400 transition duration-300">
-							Hi, I'm{" "}
-							<span className="text-green-300 font-bold">Sijan Pradhan</span>, a
-							passionate and results-driven Developer Programmer
-						</span>{" "}
-						with hands-on experience building{" "}
-						<span className="hover:text-green-400 transition duration-300">
-							modern, scalable web applications
-						</span>
-						. I hold a{" "}
-						<span className="text-green-300 font-bold hover:text-green-400 transition duration-300">
-							Bachelor's degree in Information Technology
-						</span>{" "}
-						from Central Queensland University and have developed a strong
-						foundation in{" "}
-						<span className="hover:text-green-400 transition duration-300">
-							front-end and back-end development
-						</span>
-						, particularly using the{" "}
-						<span className="text-green-300 font-bold hover:text-green-400 transition duration-300">
-							MERN stack (MongoDB, Express.js, React, Node.js)
-						</span>
-						. One of the most defining chapters in my professional journey was
-						my time at{" "}
-						<span className="text-green-300 font-bold hover:text-green-400 transition duration-300">
-							Irak Solutions Pty Ltd
-						</span>
-						. At Irak, I was deeply involved in the{" "}
-						<span className="hover:text-green-400 transition duration-300">
-							design, development, and deployment
-						</span>{" "}
-						of several internal and client-facing systems. My role focused on{" "}
-						<span className="hover:text-green-400 transition duration-300">
-							building user-centric features, maintaining scalable codebases,
-							and optimizing performance
-						</span>
-						. I collaborated closely with cross-functional teams to deliver{" "}
-						<span className="hover:text-green-400 transition duration-300">
-							high-quality software solutions
-						</span>
-						, contributing significantly to the company's technological growth.
-						In addition to my technical experience, I bring a{" "}
-						<span className="hover:text-green-400 transition duration-300">
-							strong sense of responsibility, problem-solving skills, and a
-							constant desire to learn and grow
-						</span>
-						. Whether it's{" "}
-						<span className="hover:text-green-400 transition duration-300">
-							improving UI/UX, writing clean backend APIs, or exploring the
-							latest in AI
-						</span>
-						, I'm always excited to take on new challenges and push the
-						boundaries of what technology can do.{" "}
-						<span className="text-green-300 font-bold hover:text-green-400 transition duration-300">
-							Let’s build something impactful together.
-						</span>
-					</h2>
-					<div className="flex flex-col sm:flex-row justify-start md:gap-4 items-center">
-						<Link
-							activeClass="active"
-							to="skills"
-							smooth={true}
-							duration={500}
-							className="text-white w-[164px] text-xs md:text-lg group border-2 px-6 py-3 my-2 flex items-center font-bold hover:bg-pink-600 hover:border-pink-600 cursor-pointer"
-						>
-							<span>Skills</span>
-							<HiArrowNarrowRight className="ml-2 group-hover:rotate-90 duration-200" />
-						</Link>
-						<Link
-							activeClass="active"
-							to="about"
-							smooth={true}
-							duration={500}
-							className="text-white w-[164px] text-xs md:text-lg group border-2 px-6 py-3 my-2 flex items-center font-bold hover:bg-pink-600 hover:border-pink-600 cursor-pointer"
-						>
-							<span>About Me</span>
-							<HiArrowNarrowRight className="ml-2 group-hover:rotate-90 duration-200" />
-						</Link>
-						<Link
-							activeClass="active"
-							to="contact"
-							smooth={true}
-							duration={500}
-							className="text-white w-[164px] text-xs md:text-lg group border-2 px-6 py-3 my-2 flex items-center font-bold hover:bg-pink-600 hover:border-pink-600 cursor-pointer"
-						>
-							<span>Contact</span>
-							<HiArrowNarrowRight className="ml-2 group-hover:rotate-90 duration-200" />
-						</Link>
+
+					{/* Right: Avatar */}
+					<div className="flex justify-center lg:justify-end">
+						<div className="relative w-[240px] h-[240px] sm:w-[360px] sm:h-[360px]">
+							<div className="absolute inset-0 rounded-full bg-gradient-to-tr from-green-400/30 to-blue-500/30 blur-2xl"></div>
+							<img
+								src={ProfilePicture}
+								alt="Sijan Pradhan"
+								className="relative w-full h-full object-cover rounded-full shadow-xl shadow-slate-900/50 border border-white/10"
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

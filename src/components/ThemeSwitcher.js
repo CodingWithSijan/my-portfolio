@@ -39,10 +39,9 @@ const ThemeSwitcher = ({
 	onThemeChange,
 	onMatrixToggle,
 	onParticlesToggle,
-	isOpen,
-	onClose,
 }) => {
 	const [currentTheme, setCurrentTheme] = useState("professional");
+	const [showPanel, setShowPanel] = useState(false);
 	const [matrixEnabled, setMatrixEnabled] = useState(false);
 	const [particlesEnabled, setParticlesEnabled] = useState(false);
 	const [soundEnabled, setSoundEnabled] = useState(true);
@@ -118,30 +117,21 @@ const ThemeSwitcher = ({
 
 	return (
 		<>
+			{/* Theme Switcher Button */}
+			<button
+				onClick={() => setShowPanel(!showPanel)}
+				className="fixed top-4 right-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-50"
+				title="Theme Settings"
+			>
+				<FaPalette size={20} />
+			</button>
+
 			{/* Settings Panel */}
-			{isOpen && (
-				<>
-					{/* Modal Backdrop */}
-					<div 
-						className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40 transition-opacity duration-300"
-						onClick={onClose}
-					/>
-					
-					{/* Modal Panel */}
-					<div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-800 rounded-lg shadow-2xl p-6 z-50 w-80 max-w-[90vw] border border-gray-200 dark:border-gray-700 animate-fade-in">
-						{/* Close button */}
-						<button
-							onClick={onClose}
-							className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-						>
-							<svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-							</svg>
-						</button>
-						
-						<h3 className="text-lg font-bold mb-4 text-gray-800 dark:text-white pr-8">
-							Theme Settings
-						</h3>
+			{showPanel && (
+				<div className="fixed top-16 right-4 bg-white dark:bg-gray-800 rounded-lg shadow-2xl p-6 z-50 w-80 border border-gray-200 dark:border-gray-700">
+					<h3 className="text-lg font-bold mb-4 text-gray-800 dark:text-white">
+						Theme Settings
+					</h3>
 
 					{/* Theme Selection */}
 					<div className="mb-6">
@@ -287,8 +277,15 @@ const ThemeSwitcher = ({
 							</button>
 						</div>
 					</div>
-					</div>
-				</>
+				</div>
+			)}
+
+			{/* Click outside to close */}
+			{showPanel && (
+				<div
+					className="fixed inset-0 z-40"
+					onClick={() => setShowPanel(false)}
+				/>
 			)}
 		</>
 	);

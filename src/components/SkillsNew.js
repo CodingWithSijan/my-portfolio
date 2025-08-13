@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import CSS from "../assests/css.png";
 import HTML from "../assests/html.png";
 import Javascript from "../assests/javascript.png";
